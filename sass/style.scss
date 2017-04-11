@@ -1,11 +1,17 @@
-@import "normalize";
+// Libraries
+@import "bourbon";
 
-@import "compass/css3"; // http://compass-style.org/reference/compass/css3/
+// Global variables and mixins
+@import "modules/variables";
+@import "modules/mixins";
 
-@import "global";
+// Partials
+@import "partials/normalize";
+@import "partials/base";
+@import "partials/typography";
 
-@import "base";
 
+// Print
 @media print {
-	@import "print";
+	@import "partials/print";
 }
